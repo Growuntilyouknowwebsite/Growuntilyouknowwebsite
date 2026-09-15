@@ -91,6 +91,17 @@ h2 { font-size: clamp(2.3rem, 5vw, 4rem); margin: 0; }
 .quote-feature .weekly-tip { border-color: rgba(255,255,255,.18); }
 .wellness-note { max-width: 850px; margin: 28px auto 0; text-align: center; color: var(--muted); font-size: .82rem; }
 
+.booking-section { background: var(--white); }
+.booking-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.booking-card { background: linear-gradient(145deg, #fff, #f5f9f6); border: 1px solid var(--border); border-radius: 24px; padding: 28px; box-shadow: 0 10px 30px rgba(23,49,79,.05); }
+.booking-icon { display: block; font-size: 2.15rem; margin-bottom: 16px; }
+.booking-card h3 { font-size: 1.45rem; margin: 0 0 11px; }
+.booking-card p { color: var(--muted); }
+.booking-format { display: inline-block; margin-top: 12px; color: #5f7c68; font-size: .8rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.booking-cta { display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; margin-top: 28px; padding: 30px; border-radius: 24px; background: var(--sage-soft); border: 1px solid var(--border); }
+.booking-cta p { margin: 4px 0; color: var(--muted); }
+.booking-cta .booking-kicker { color: var(--navy); font-family: "Playfair Display", serif; font-size: 1.35rem; font-weight: 700; }
+
 .shop-section { background: var(--navy-deep); color: white; }
 .shop-box { display: grid; grid-template-columns: .85fr 1.15fr; gap: 46px; align-items: center; }
 .shop-copy h2 { color: white; }
@@ -134,12 +145,12 @@ h2 { font-size: clamp(2.3rem, 5vw, 4rem); margin: 0; }
   .main-nav { display: none; position: absolute; top: 76px; left: 0; right: 0; background: white; padding: 18px 20px 24px; flex-direction: column; border-bottom: 1px solid var(--border); }
   .main-nav.open { display: flex; }
   .menu-toggle { display: block; }
-  .hero-grid, .split, .career-grid, .connect-box, .shop-box { grid-template-columns: 1fr; }
+  .hero-grid, .split, .career-grid, .connect-box, .shop-box, .booking-cta { grid-template-columns: 1fr; }
   .hero-grid { min-height: auto; gap: 36px; }
   .hero-card { min-height: 340px; }
   .three-values { grid-template-columns: 1fr; }
   .three-values > div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
-  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards, .booking-grid { grid-template-columns: repeat(2, 1fr); }
   .weekly-grid { grid-template-columns: repeat(2, 1fr); }
   .weekly-card, .weekly-card:nth-child(4), .weekly-card:nth-child(5) { grid-column: span 1; }
   .quote-feature { grid-column: 1 / -1 !important; }
@@ -152,7 +163,7 @@ h2 { font-size: clamp(2.3rem, 5vw, 4rem); margin: 0; }
   .hero h1 { font-size: 3.2rem; }
   .hero-actions, .connect-actions { flex-direction: column; }
   .btn { width: 100%; }
-  .cards, .weekly-grid, .shop-options { grid-template-columns: 1fr; }
+  .cards, .weekly-grid, .shop-options, .booking-grid { grid-template-columns: 1fr; }
   .quote-feature { grid-column: auto !important; }
   .section { padding: 72px 0; }
   .career-panel, .career-feature, .connect-box { padding: 28px; }
